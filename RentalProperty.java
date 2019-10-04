@@ -4,21 +4,21 @@
  * @author Leroy Valencia
  */
 
-/**
+/*
  * This is the payment interface that implements the method calculate rent to each sub class
  */
 interface Payment {
   double calculateRentDue();
 }
-//Main class
+
 public class RentalProperty implements Payment {
   private String typeOfProp;
   private int numOfRooms;
   private String idNumber;
 
   /**
-   * This is the rental property super class that holds the values for any sub classes. This is also the main
-   * constructor for the RentalProperty.
+   * This is the rental property super class that holds the values for any sub classes. This is also
+   * the main constructor for the RentalProperty.
    *
    * @param typeofProp
    * @param idNumber
@@ -31,8 +31,9 @@ public class RentalProperty implements Payment {
   }
 
   /**
-   * This is the implemented method from the interface. THis has jsut a return 0 because there is no calculations that
-   * need to be done here.
+   * This is the implemented method from the interface. THis has jsut a return 0 because there is no
+   * calculations that need to be done here.
+   *
    * @return 0
    */
   @Override
@@ -43,16 +44,15 @@ public class RentalProperty implements Payment {
 
   /**
    * Getters for the property information
+   *
    * @return
    */
   public String getIdNumber() {
     return idNumber;
   }
-
   public String getTypeofProp() {
     return typeOfProp;
   }
-
   public int getNumOfRooms() {
     return numOfRooms;
   }

@@ -5,12 +5,12 @@
  */
 public class ApartmentRental extends RentalProperty {
   public ApartmentRental(String typeOfProp, String idNumber, int numOfRooms) {
-    super(typeOfProp, idNumber, numOfRooms);
+    super(typeOfProp, idNumber, numOfRooms);//inherits the super instance variables
   }
 
   /**
-   * This is the calculateRentDue that will literally calculate the rent that is due for the Apartment
-   * rentals. It uses the numbers that are provided in the instructions.
+   * This is the calculateRentDue that will literally calculate the rent that is due for the
+   * Apartment rentals. It uses the numbers that are provided in the instructions.
    *
    * @return the double that the rent is due depends on the num of rooms.
    */
@@ -24,7 +24,7 @@ public class ApartmentRental extends RentalProperty {
         case 2:
           return (800 * 0.08) + 800;
         default:
-          System.err.print("Impossible rent in Apartment Rental");
+          System.err.print("Impossible room number in Apartment Rental");
           System.exit(1);
       }
     }
